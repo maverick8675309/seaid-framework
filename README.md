@@ -97,3 +97,14 @@ XGBoost achieved the strongest predictive performance, demonstrating that nonlin
 ## Key Finding
 
 Student engagement, measured through total interactions with the virtual learning environment (VLE), emerged as the most influential predictor of academic success. Random Forest feature importance analysis indicated that engagement accounted for approximately 75% of overall predictive importance, substantially exceeding demographic and socioeconomic variables.
+
+## Final Model Comparison
+
+| Model | ROC-AUC |
+|---|---:|
+| XGBoost | 0.8614 |
+| Neural Network | 0.8571 |
+| Logistic Regression | 0.8264 |
+| Random Forest | 0.8202 |
+
+XGBoost achieved the strongest overall performance, followed closely by the neural network. Both advanced models outperformed the Logistic Regression baseline, suggesting that more complex modeling approaches captured additional nonlinear patterns in the data.
