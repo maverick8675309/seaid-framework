@@ -81,3 +81,19 @@ The target variable is binary:
 ## Ethical Considerations
 
 This project treats predictive analytics as a decision-support tool, not an automated decision-making system. Predictive models should support advisors, faculty, and mentors while maintaining human oversight, transparency, and fairness.
+
+## Model Performance Comparison
+
+Three machine learning approaches were evaluated for predicting student success:
+
+| Model               | ROC-AUC |
+| ------------------- | ------: |
+| XGBoost             |   0.861 |
+| Logistic Regression |   0.826 |
+| Random Forest       |   0.820 |
+
+XGBoost achieved the strongest predictive performance, demonstrating that nonlinear machine learning methods can capture complex relationships between student engagement, academic background, and educational outcomes more effectively than traditional statistical models.
+
+## Key Finding
+
+Student engagement, measured through total interactions with the virtual learning environment (VLE), emerged as the most influential predictor of academic success. Random Forest feature importance analysis indicated that engagement accounted for approximately 75% of overall predictive importance, substantially exceeding demographic and socioeconomic variables.
