@@ -152,8 +152,9 @@ Data/Raw/
 
 ---
 
-# Repository Structure
+## Repository Structure
 
+```text
 seaid-framework/
 │
 ├── README.md
@@ -162,9 +163,9 @@ seaid-framework/
 ├── .gitignore
 │
 ├── data/
-│   ├── raw/                  # Original datasets (ignored by Git)
-│   ├── processed/            # Cleaned datasets (ignored if large)
-│   ├── interim/              # Intermediate files
+│   ├── raw/                  # Original datasets (not tracked)
+│   ├── processed/            # Processed datasets
+│   ├── interim/              # Intermediate datasets
 │   └── README.md             # Data dictionary & download instructions
 │
 ├── notebooks/
@@ -194,10 +195,10 @@ seaid-framework/
 │   └── utils.py
 │
 ├── figures/
+│   ├── architecture/
 │   ├── model_performance/
 │   ├── shap/
-│   ├── stem/
-│   └── architecture/
+│   └── stem/
 │
 ├── reports/
 │   ├── methodology.md
@@ -207,8 +208,8 @@ seaid-framework/
 │
 ├── docs/
 │   ├── framework_architecture.md
-│   ├── roadmap.md
 │   ├── installation.md
+│   ├── roadmap.md
 │   └── changelog.md
 │
 ├── models/
@@ -216,7 +217,7 @@ seaid-framework/
 │
 └── tests/
     └── .gitkeep
----
+```
 
 # Exploratory Data Analysis
 
