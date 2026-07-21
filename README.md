@@ -264,7 +264,7 @@ Future development will expand the SEAID Framework with:
 
 **Active Graduate Research**
 
-This framework is currently being developed as part of graduate coursework in Applied Machine Learning and Artificial Intelligence. Future versions will expand the framework through additional datasets, explainability methods, institutional benchmarking, and scalable educational decision-support capabilities.
+This framework is currently being developed as part of graduate coursework in Artificial Intelligence and Deep Learning. Future versions will expand the framework through additional datasets, explainability methods, institutional benchmarking, and scalable educational decision-support capabilities.
 
 ---
 
@@ -273,7 +273,7 @@ This framework is currently being developed as part of graduate coursework in Ap
 **Kristin Kelly**
 
 Graduate Student  
-M.S. Applied Machine Learning  
+M.S. Data Science & Business Analytics  
 The University of North Carolina at Charlotte
 
 **Research Focus**
