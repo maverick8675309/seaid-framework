@@ -1,6 +1,7 @@
-# Scalable Explainable Artificial Intelligence and Deep Learning Framework (SEAID)
+# 🧠 SEAID Framework
+## Scalable Explainable Artificial Intelligence and Deep Learning Framework for Educational Decision Support
 
-*A modular framework for predicting, explaining, and supporting student success through machine learning, deep learning, and explainable artificial intelligence.*
+*A scalable, explainable artificial intelligence framework for educational decision support that integrates machine learning, deep learning, and explainable AI into a reusable architecture for higher education.*
 
 ---
 
@@ -14,9 +15,43 @@ The first implementation uses the **Open University Learning Analytics Dataset (
 
 ---
 
+# Current Status
+
+**Version:** 1.0 Research Prototype
+
+**Status:** 🚧 Active Development
+
+### Current Capabilities
+
+- Exploratory Data Analysis
+- Feature Engineering
+- Logistic Regression
+- Random Forest
+- XGBoost
+- Neural Network
+- Model Evaluation
+
+Future releases will expand the framework with Explainable AI, institutional benchmarking, fairness evaluation, and advisor decision-support tools.
+
+---
+
+# Why SEAID?
+
+Most educational AI projects answer a single question:
+
+> **Can we predict which students are at risk?**
+
+SEAID asks a broader question:
+
+> **How can we build a scalable, explainable AI framework that educational institutions can trust, understand, and adapt?**
+
+The framework emphasizes transparency, reproducibility, explainability, and responsible AI rather than predictive accuracy alone.
+
+---
+
 # Research Objectives
 
-This framework seeks to answer the following research questions:
+The SEAID Framework seeks to answer the following research questions:
 
 - How accurately can machine learning and deep learning models predict student success?
 - Which academic, behavioral, demographic, and socioeconomic variables most strongly influence educational outcomes?
@@ -69,6 +104,32 @@ Educational Decision Support
 
 ---
 
+# Example Workflow
+
+```text
+Student Data
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Machine Learning
+      │
+      ▼
+Deep Learning
+      │
+      ▼
+Explainable AI
+      │
+      ▼
+Educational Decision Support
+```
+
+---
+
 # Dataset
 
 The current implementation uses the **Open University Learning Analytics Dataset (OULAD)**.
@@ -85,7 +146,7 @@ Raw data are **not included** in this repository.
 
 Download the OULAD dataset separately and place the CSV files in:
 
-```
+```text
 Data/Raw/
 ```
 
@@ -141,7 +202,7 @@ Current predictive variables include:
 
 ### Target Variable
 
-```
+```text
 1 = Pass or Distinction
 
 0 = Fail or Withdraw
@@ -163,7 +224,7 @@ Future versions of the framework will support additional machine learning and de
 # Model Performance
 
 | Model | ROC-AUC |
-|--------|---------|
+|:----------------------------|-------:|
 | **XGBoost** | **0.8614** |
 | **Neural Network** | **0.8571** |
 | Logistic Regression | 0.8264 |
@@ -186,16 +247,16 @@ Current analyses suggest:
 
 # Ethical AI
 
-This framework treats artificial intelligence as a **decision-support system**, not an automated decision-maker.
+SEAID treats artificial intelligence as a **decision-support framework**, not an automated decision-maker.
 
 Core principles include:
 
-- Human oversight
-- Transparency
+- Human Oversight
 - Explainability
+- Transparency
 - Fairness
 - Responsible AI
-- Educational equity
+- Educational Equity
 
 ---
 
@@ -203,7 +264,7 @@ Core principles include:
 
 Future development will expand the SEAID Framework with:
 
-- Explainable AI (SHAP)
+- Explainable AI using SHAP
 - Blackboard Ultra integration
 - Institutional benchmarking
 - Multi-institution support
@@ -216,66 +277,97 @@ Future development will expand the SEAID Framework with:
 
 ---
 
+# Future Research Directions
+
+The long-term research agenda includes:
+
+- Transformer-based educational prediction
+- Graph Neural Networks
+- Time-series student progression models
+- Transfer learning across institutions
+- Federated learning
+- Causal inference
+- Responsible AI auditing
+- Educational decision intelligence
+
+---
+
 # Technologies
 
-### Programming
+## Programming
 
 - Python
 
-### Data Science
+## Data Science
 
 - Pandas
 - NumPy
 
-### Machine Learning
+## Machine Learning
 
 - Scikit-learn
 - XGBoost
 
-### Deep Learning
+## Deep Learning
 
-- TensorFlow / Keras
+- TensorFlow
+- Keras
 
-### Explainable AI
+## Explainable AI
 
 - SHAP
 
-### Visualization
+## Visualization
 
 - Matplotlib
 - Plotly
 
 ---
 
-# Research Interests
+# Research Themes
 
 - Artificial Intelligence
 - Deep Learning
-- Explainable AI
+- Explainable Artificial Intelligence (XAI)
 - Educational Data Mining
 - Learning Analytics
 - Student Success Analytics
+- Predictive Modeling
 - Higher Education Decision Support
 - Responsible AI
 
 ---
 
-# Project Status
+# Citation
 
-**Active Graduate Research**
+If you use or reference this framework, please cite:
 
-This framework is currently being developed as part of graduate coursework in Artificial Intelligence and Deep Learning. Future versions will expand the framework through additional datasets, explainability methods, institutional benchmarking, and scalable educational decision-support capabilities.
+> Kelly, K. (2026). *SEAID: Scalable Explainable Artificial Intelligence and Deep Learning Framework for Educational Decision Support.* GitHub Repository.
 
 ---
 
-## Author
+# Project Status
 
-**Kristin Kelly**
+🚧 **Active Graduate Research**
+
+This framework is currently being developed as part of graduate research in the M.S. in Data Science & Business Analytics program at the University of North Carolina at Charlotte. Future versions will expand the framework through additional datasets, explainability methods, institutional benchmarking, and scalable educational decision-support capabilities.
+
+---
+
+# Author
+
+## Kristin Kelly
 
 Graduate Student  
-M.S. Data Science & Business Analytics  
-The University of North Carolina at Charlotte
+**M.S. Data Science & Business Analytics**  
+University of North Carolina at Charlotte
 
-**Research Focus**
+### Research Focus
 
 Building scalable, explainable artificial intelligence frameworks that improve educational decision-making while promoting transparency, fairness, and student success.
+
+---
+
+# Vision
+
+The long-term vision of the SEAID Framework is to advance trustworthy, explainable, and scalable artificial intelligence for higher education by developing reusable tools that empower educators, improve student success, and support evidence-informed decision-making across educational institutions.
