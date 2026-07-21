@@ -154,25 +154,68 @@ Data/Raw/
 
 # Repository Structure
 
-```text
-student-success-ai-framework/
+seaid-framework/
 │
-├── Data/
-│   ├── Raw/
-│   └── Processed/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
 │
-├── Notebooks/
+├── data/
+│   ├── raw/                  # Original datasets (ignored by Git)
+│   ├── processed/            # Cleaned datasets (ignored if large)
+│   ├── interim/              # Intermediate files
+│   └── README.md             # Data dictionary & download instructions
+│
+├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_logistic_regression.ipynb
 │   ├── 04_random_forest.ipynb
 │   ├── 05_xgboost.ipynb
-│   └── 06_neural_network.ipynb
+│   ├── 06_neural_network.ipynb
+│   ├── 07_stem_analysis.ipynb
+│   ├── 08_stem_xgboost.ipynb
+│   ├── 09_stem_neural_network.ipynb
+│   ├── 10_explainable_ai_shap.ipynb
+│   ├── 11_model_fairness.ipynb
+│   ├── 12_decision_confidence_index.ipynb
+│   ├── 13_institutional_benchmarking.ipynb
+│   └── 14_dashboard_prototype.ipynb
 │
-├── README.md
-└── .gitignore
-```
-
+├── src/
+│   ├── __init__.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── modeling.py
+│   ├── evaluation.py
+│   ├── explainability.py
+│   ├── visualization.py
+│   └── utils.py
+│
+├── figures/
+│   ├── model_performance/
+│   ├── shap/
+│   ├── stem/
+│   └── architecture/
+│
+├── reports/
+│   ├── methodology.md
+│   ├── results.md
+│   ├── future_work.md
+│   └── bibliography.md
+│
+├── docs/
+│   ├── framework_architecture.md
+│   ├── roadmap.md
+│   ├── installation.md
+│   └── changelog.md
+│
+├── models/
+│   └── .gitkeep
+│
+└── tests/
+    └── .gitkeep
 ---
 
 # Exploratory Data Analysis
