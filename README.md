@@ -1,4 +1,4 @@
-# 🧠 SEAID Framework
+# SEAID Framework
 ## Scalable Explainable Artificial Intelligence and Deep Learning Framework for Educational Decision Support
 
 *A scalable, explainable artificial intelligence framework for educational decision support that integrates machine learning, deep learning, and explainable AI into a reusable architecture for higher education.*
