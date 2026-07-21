@@ -1,5 +1,90 @@
-.venv/
+# ==========================
+# Python
+# ==========================
+
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
 
+# ==========================
+# Data
+# ==========================
+
+# Raw datasets (not tracked)
 Data/Raw/
+
+# Large processed datasets (optional)
+Data/Processed/
+
+# Generated outputs
+results/
+outputs/
+
+# ==========================
+# Machine Learning
+# ==========================
+
+# Model checkpoints
+*.h5
+*.keras
+*.ckpt
+*.pth
+*.pt
+*.pickle
+*.pkl
+*.joblib
+
+# TensorBoard
+logs/
+
+# ==========================
+# IDEs
+# ==========================
+
+.vscode/
+.idea/
+
+# ==========================
+# Operating System
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Environment Variables
+# ==========================
+
+.env
+.env.*
+
+# ==========================
+# Testing
+# ==========================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================
+# Build
+# ==========================
+
+build/
+dist/
+*.egg-info/
+
+# ==========================
+# Miscellaneous
+# ==========================
+
+*.log
