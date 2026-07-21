@@ -1,110 +1,281 @@
-# Student Success AI Framework
+# Scalable Explainable Artificial Intelligence and Deep Learning Framework (SEAID)
 
-This project uses machine learning and learning analytics to predict student persistence and academic success using the Open University Learning Analytics Dataset (OULAD).
+*A modular framework for predicting, explaining, and supporting student success through machine learning, deep learning, and explainable artificial intelligence.*
 
-## Project Goal
+---
 
-The goal of this project is to develop a predictive modeling framework that can identify students who may be at risk of failing or withdrawing, while also exploring how engagement, prior education, socioeconomic status, and academic behavior relate to student success.
+## Overview
 
-## Dataset
+The **Scalable Explainable Artificial Intelligence and Deep Learning (SEAID) Framework** is an ongoing graduate research project focused on developing a reusable decision-support framework for higher education.
 
-This project uses the Open University Learning Analytics Dataset (OULAD), which includes student demographics, assessment data, registration data, course information, and virtual learning environment activity.
+Unlike traditional student success projects that focus on a single predictive model, SEAID integrates machine learning, deep learning, explainable AI, and educational data mining into a scalable architecture designed for deployment across multiple institutions and educational datasets.
 
-Raw data files are not included in this repository. Users should download the OULAD dataset separately and place the CSV files in:
+The first implementation uses the **Open University Learning Analytics Dataset (OULAD)** as a proof of concept while establishing a foundation for future institutional applications.
+
+---
+
+# Research Objectives
+
+This framework seeks to answer the following research questions:
+
+- How accurately can machine learning and deep learning models predict student success?
+- Which academic, behavioral, demographic, and socioeconomic variables most strongly influence educational outcomes?
+- Can explainable AI improve transparency and trust in educational prediction models?
+- How can AI support educational decision-making while maintaining human oversight?
+- How can predictive models be transferred across institutions and educational datasets?
+
+---
+
+# Framework Architecture
 
 ```text
+Educational Data Sources
+│
+├── Learning Management Systems
+├── Student Information Systems
+├── Institutional Research Data
+├── Public Educational Datasets
+└── Institutional Benchmarks
+        │
+        ▼
+Data Engineering Pipeline
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+Machine Learning Models
+        │
+        ├── Logistic Regression
+        ├── Random Forest
+        ├── XGBoost
+        └── Additional Ensemble Models
+        │
+        ▼
+Deep Learning Models
+        │
+        └── Multi-Layer Perceptron
+        │
+        ▼
+Explainable AI
+        │
+        ├── SHAP
+        ├── Feature Importance
+        └── Local Model Explanations
+        │
+        ▼
+Educational Decision Support
+```
+
+---
+
+# Dataset
+
+The current implementation uses the **Open University Learning Analytics Dataset (OULAD)**.
+
+The dataset includes:
+
+- Student demographics
+- Assessment information
+- Registration records
+- Course information
+- Virtual Learning Environment (VLE) activity
+
+Raw data are **not included** in this repository.
+
+Download the OULAD dataset separately and place the CSV files in:
+
+```
 Data/Raw/
 ```
 
-## Project Structure
+---
+
+# Repository Structure
 
 ```text
 student-success-ai-framework/
 │
 ├── Data/
 │   ├── Raw/
-│   └── processed/
+│   └── Processed/
 │
 ├── Notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_feature_engineering.ipynb
-│   └── 03_logistic_regression.ipynb
+│   ├── 03_logistic_regression.ipynb
+│   ├── 04_random_forest.ipynb
+│   ├── 05_xgboost.ipynb
+│   └── 06_neural_network.ipynb
 │
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## Current Progress
+---
 
-### Exploratory Data Analysis
+# Exploratory Data Analysis
 
-Initial EDA found several meaningful patterns:
+Initial exploratory analysis identified several meaningful patterns:
 
-* Students earning distinctions had much higher VLE engagement than students who failed or withdrew.
-* Prior education level was strongly associated with academic outcomes.
-* Socioeconomic status, measured through IMD band, showed a clear relationship with success and withdrawal.
-* Older students appeared to have stronger outcomes, although the 55+ group was small.
-* Students who withdrew had higher average studied credits, suggesting heavier course loads may be associated with withdrawal risk.
+- Students earning distinctions demonstrated substantially higher VLE engagement than students who failed or withdrew.
+- Prior education level was strongly associated with academic success.
+- Socioeconomic status (IMD Band) showed a meaningful relationship with educational outcomes.
+- Older students generally achieved stronger academic performance.
+- Students who withdrew tended to enroll in higher credit loads.
 
-### Feature Engineering
+---
 
-The first modeling dataset includes:
+# Feature Engineering
 
-* Gender
-* Highest education level
-* IMD band
-* Age band
-* Number of previous attempts
-* Studied credits
-* Disability status
-* Total VLE clicks
+Current predictive variables include:
 
-The target variable is binary:
+- Gender
+- Highest Education Level
+- IMD Band
+- Age Band
+- Number of Previous Attempts
+- Studied Credits
+- Disability Status
+- Total VLE Clicks
 
-* `1` = Success: Pass or Distinction
-* `0` = Not Success: Fail or Withdrawn
+### Target Variable
 
-## Planned Models
+```
+1 = Pass or Distinction
 
-* Logistic Regression
-* Random Forest
-* XGBoost
-* Neural Network
+0 = Fail or Withdraw
+```
 
-## Research Questions
+---
 
-1. Can machine learning models accurately predict student persistence and academic success?
-2. Which demographic, academic, and engagement variables contribute most strongly to student outcomes?
-3. Do more complex models outperform traditional baseline methods?
-4. How might predictive analytics support future student success interventions in STEM education?
+# Implemented Models
 
-## Ethical Considerations
+- Logistic Regression
+- Random Forest
+- XGBoost
+- Multi-Layer Perceptron (Neural Network)
 
-This project treats predictive analytics as a decision-support tool, not an automated decision-making system. Predictive models should support advisors, faculty, and mentors while maintaining human oversight, transparency, and fairness.
+Future versions of the framework will support additional machine learning and deep learning architectures.
 
-## Model Performance Comparison
+---
 
-Three machine learning approaches were evaluated for predicting student success:
-
-| Model               | ROC-AUC |
-| ------------------- | ------: |
-| XGBoost             |   0.861 |
-| Logistic Regression |   0.826 |
-| Random Forest       |   0.820 |
-
-XGBoost achieved the strongest predictive performance, demonstrating that nonlinear machine learning methods can capture complex relationships between student engagement, academic background, and educational outcomes more effectively than traditional statistical models.
-
-## Key Finding
-
-Student engagement, measured through total interactions with the virtual learning environment (VLE), emerged as the most influential predictor of academic success. Random Forest feature importance analysis indicated that engagement accounted for approximately 75% of overall predictive importance, substantially exceeding demographic and socioeconomic variables.
-
-## Final Model Comparison
+# Model Performance
 
 | Model | ROC-AUC |
-|---|---:|
-| XGBoost | 0.8614 |
-| Neural Network | 0.8571 |
+|--------|---------|
+| **XGBoost** | **0.8614** |
+| **Neural Network** | **0.8571** |
 | Logistic Regression | 0.8264 |
 | Random Forest | 0.8202 |
 
-XGBoost achieved the strongest overall performance, followed closely by the neural network. Both advanced models outperformed the Logistic Regression baseline, suggesting that more complex modeling approaches captured additional nonlinear patterns in the data.
+XGBoost currently provides the strongest predictive performance, with the neural network producing comparable results. Both advanced approaches outperform the Logistic Regression baseline, demonstrating that nonlinear learning methods capture additional relationships within the educational data.
+
+---
+
+# Key Findings
+
+Current analyses suggest:
+
+- Student engagement is the strongest predictor of academic success.
+- VLE activity contributes substantially more predictive information than demographic variables.
+- Machine learning and deep learning outperform traditional statistical approaches.
+- Explainable AI is essential for translating predictive analytics into educational decision support.
+
+---
+
+# Ethical AI
+
+This framework treats artificial intelligence as a **decision-support system**, not an automated decision-maker.
+
+Core principles include:
+
+- Human oversight
+- Transparency
+- Explainability
+- Fairness
+- Responsible AI
+- Educational equity
+
+---
+
+# Planned Framework Enhancements
+
+Future development will expand the SEAID Framework with:
+
+- Explainable AI (SHAP)
+- Blackboard Ultra integration
+- Institutional benchmarking
+- Multi-institution support
+- Decision Confidence Index (DCI)
+- Advisor decision-support dashboards
+- Counterfactual ("What-If") analysis
+- Fairness and bias evaluation
+- Intervention recommendation engine
+- Longitudinal student success prediction
+
+---
+
+# Technologies
+
+### Programming
+
+- Python
+
+### Data Science
+
+- Pandas
+- NumPy
+
+### Machine Learning
+
+- Scikit-learn
+- XGBoost
+
+### Deep Learning
+
+- TensorFlow / Keras
+
+### Explainable AI
+
+- SHAP
+
+### Visualization
+
+- Matplotlib
+- Plotly
+
+---
+
+# Research Interests
+
+- Artificial Intelligence
+- Deep Learning
+- Explainable AI
+- Educational Data Mining
+- Learning Analytics
+- Student Success Analytics
+- Higher Education Decision Support
+- Responsible AI
+
+---
+
+# Project Status
+
+**Active Graduate Research**
+
+This framework is currently being developed as part of graduate coursework in Applied Machine Learning and Artificial Intelligence. Future versions will expand the framework through additional datasets, explainability methods, institutional benchmarking, and scalable educational decision-support capabilities.
+
+---
+
+## Author
+
+**Kristin Kelly**
+
+Graduate Student  
+M.S. Applied Machine Learning  
+The University of North Carolina at Charlotte
+
+**Research Focus**
+
+Building scalable, explainable artificial intelligence frameworks that improve educational decision-making while promoting transparency, fairness, and student success.
