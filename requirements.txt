@@ -8,3 +8,5 @@ catboost
 shap
 jupyter
 kagglehub
+streamlit
+joblib
