@@ -7,7 +7,7 @@
 
 ## Overview
 
-The **Scalable Explainable Artificial Intelligence and Deep Learning (SEAID) Framework** is an ongoing graduate research project focused on developing a reusable decision-support framework for higher education.
+The **Student Explainable Artificial Intelligence and Deep Learning (SEAID) Framework** is an ongoing graduate research project focused on developing a reusable decision-support framework for higher education.
 
 Unlike traditional student success projects that focus on a single predictive model, SEAID integrates machine learning, deep learning, explainable AI, and educational data mining into a scalable architecture designed for deployment across multiple institutions and educational datasets.
 
