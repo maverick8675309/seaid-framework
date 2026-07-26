@@ -1,3 +1,0 @@
-"""
-SEAID Framework source code.
-"""
